@@ -12,3 +12,12 @@ System.Console.WriteLine("Введите количество элементов
 int size = Convert.ToInt32(Console.ReadLine());
 
 string[] array = new string [size];
+createArray(array);
+void createArray (string[] array)
+{
+    for (int i = 0; i < size; i++)
+    {
+        System.Console.WriteLine($"Введите {i+1} элемент массива: ");
+        array[i] = Console.ReadLine();
+    }
+}

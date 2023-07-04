@@ -15,6 +15,8 @@ int j = 0;
 string[] array = new string [size];
 createArray(array);
 CheckShortStrings(array);
+string[] newarray = new string[n];
+TransferShortStrings(array,newarray);
 
 void createArray (string[] array)
 {
@@ -33,6 +35,18 @@ void CheckShortStrings(string[] array)
         {
             System.Console.WriteLine(array[i]);
             n++;
+        }
+    }
+}
+
+void TransferShortStrings(string[] array, string[] newarray)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newarray[j] = array[i];
+            j++;
         }
     }
 }

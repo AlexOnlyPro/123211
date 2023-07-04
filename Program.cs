@@ -33,7 +33,7 @@ void CheckShortStrings(string[] array)
     {
         if (array[i].Length <= 3)
         {
-            System.Console.WriteLine(array[i]);
+            // System.Console.WriteLine(array[i]);
             n++;
         }
     }

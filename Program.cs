@@ -10,14 +10,29 @@
 
 System.Console.WriteLine("Введите количество элементов в массиве: ");
 int size = Convert.ToInt32(Console.ReadLine());
-
+int n = 0;
+int j = 0;
 string[] array = new string [size];
 createArray(array);
+CheckShortStrings(array);
+
 void createArray (string[] array)
 {
     for (int i = 0; i < size; i++)
     {
         System.Console.WriteLine($"Введите {i+1} элемент массива: ");
         array[i] = Console.ReadLine();
+    }
+}
+
+void CheckShortStrings(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            System.Console.WriteLine(array[i]);
+            n++;
+        }
     }
 }

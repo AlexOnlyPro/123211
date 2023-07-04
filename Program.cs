@@ -7,3 +7,8 @@
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
+
+System.Console.WriteLine("Введите количество элементов в массиве: ");
+int size = Convert.ToInt32(Console.ReadLine());
+
+string[] array = new string [size];
